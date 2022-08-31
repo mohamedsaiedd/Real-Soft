@@ -172,13 +172,13 @@ li.nav-item .active::before {
 .image {
   width: 50%;
 }
-.image::after {
+.image::before {
   content: "";
   position: absolute;
-  transform: translate(50%, 50%);
-  width: 200px;
-  height: 200px;
-  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  transform: translate(30%, 20%);
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(120deg, #356DFF, #33d0ff);
   opacity: 0.7;
   border-radius: 50%;
   z-index: -1;
@@ -211,4 +211,68 @@ li.nav-item .active::before {
   letter-spacing: 0.22px;
   margin: 30px 0 !important;
   width: 70%;
+}
+
+path {
+  stroke-width: 2;
+  stroke: #fff;
+  fill: none;
+  stroke-dasharray: 430;
+  transition: transform 1s linear;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+svg:hover path {
+  animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+  -webkit-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+  -moz-animation: dash 2s reverse cubic-bezier(0.45, 0.03, 0.51, 0.95) 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+@keyframes dash {
+  to {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600 0;
+  }
+}
+.btns {
+  display: flex;
+  position: absolute;
+  margin: 0 !important;
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+.btns .btn {
+  border-radius: 43px 43px 43px 12px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background-color: #356DFF;
+  width: 200px !important;
+  z-index: 0;
+  margin-right: 20px;
+  padding: 15px 20px;
+  color: white;
+}
+.btns .btn-frame {
+  color: #0B0D39;
+  border: 2px solid rgb(61, 61, 61);
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
