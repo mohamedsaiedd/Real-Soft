@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap");
+body,
+html {
+  font-family: "DM Sans", sans-serif !important;
+  height: 300vh;
+  overflow-x: hidden !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top-right-radius: 54px;
+  border-top-left-radius: 54px;
+  border-bottom-left-radius: 54px;
+  border-bottom-right-radius: 54px;
+  box-shadow: 2px 16px 54px -11px rgba(0, 0, 0, 0.2) !important;
+  font-weight: 700;
+}
+
+.d-flex {
+  margin: 0 auto !important;
+  align-items: center;
+  width: auto;
+  justify-content: end;
+}
+.d-flex .btn-dark-mode {
+  background-color: #0B0D39;
+  color: #ffffff;
+}
+.d-flex .btn-download-app {
+  border: 1px solid #0B0D39;
+}
+.d-flex .btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  margin-right: 10px;
+  border-color: rgba(75, 76, 92, 0.2549019608);
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 10px 20px;
+}
+.d-flex .btn:hover {
+  border-color: #4b4c5c;
+}
+
+.navbar-brand {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.navbar-brand-h3 {
+  margin-left: 10px !important;
+  margin: auto;
+}
+.navbar-brand-h3 span {
+  color: #356DFF !important;
+}
+
+.justify-content-center {
+  align-items: center;
+  text-align: center !important;
+  width: 100%;
+}
+
+li.nav-item {
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+}
+li.nav-item i {
+  color: #6D6E88;
+  font-size: 10px;
+}
+li.nav-item .active {
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+li.nav-item .active::before {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #356DFF;
+  bottom: 0px;
+  height: 8px;
+  content: "";
+  width: 8px;
+  left: 50%;
+}
+
+.freeDots .dot1 {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #F3582B;
+  bottom: 10vh;
+  height: 28px;
+  content: "";
+  width: 28px;
+  left: 30%;
+}
+.freeDots .dot2 {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #F3582B;
+  bottom: 80vh;
+  height: 8px;
+  content: "";
+  width: 8px;
+  left: 10%;
+}
+.freeDots .dot3 {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #7B53FF;
+  bottom: 20vh;
+  height: 18px;
+  content: "";
+  width: 18px;
+  left: 80%;
+}
+.freeDots .dot4 {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #7B53FF;
+  bottom: 120vh;
+  height: 28px;
+  content: "";
+  width: 28px;
+  left: 80%;
+}
+.freeDots .dot5 {
+  transform: translateX(-50%);
+  border-radius: 100%;
+  position: absolute;
+  background: #7EC68F;
+  top: 190vh;
+  height: 58px;
+  content: "";
+  width: 58px;
+  left: 20%;
+}
+
+.heroParent {
+  justify-content: space-between;
+  position: relative !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heroParent .heroSection {
+  width: 50%;
+}
+.heroParent img {
+  scale: 1.2;
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+.image {
+  width: 50%;
+}
+.image::after {
+  content: "";
+  position: absolute;
+  transform: translate(50%, 50%);
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  opacity: 0.7;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.pricing-btn {
+  margin-left: 0px;
+  border: none !important;
+}
+.featuers-btn {
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.featuers-btn:hover {
+  background-color: aliceblue;
+  border: 1px solid rgba(0, 0, 0, 0) !important;
+}
+
+.heroSection h1 {
+  font-weight: 900 !important;
+  font-size: 60px !important;
+  width: 100%;
+  color: #0B0D39;
+}
+.heroSection h1 span {
+  color: #356DFF;
+}
+.heroSection p {
+  letter-spacing: 0.22px;
+  margin: 30px 0 !important;
+  width: 70%;
+}/*# sourceMappingURL=style.css.map */
