@@ -352,10 +352,75 @@ svg:hover path {
         color: white;
 
     }
+
     .btn-frame {
-        color:$dark-mode ;
+        color: $dark-mode ;
         border: 2px solid rgb(61, 61, 61);
         background-color: white;
-    } 
-    
+    }
+
+}
+
+
+//testimonials
+.imageGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 40px;
+        align-items: flex-end !important;
+        object-fit: contain;
+        position: relative;
+        bottom: 0;
+        height: fit-content;
+        top: 50px;
+        left: -47px;
+        border: 4px solid #fff;
+        border-radius:50%
+    }
+    .imageGroup-img1 {
+        
+        z-index: 2;
+    }
+    .imageGroup-img2 {
+        left: -60px;
+        z-index: 1;
+    }
+    .imageGroup-img3 {
+        left: -80px;
+        z-index: 0;
+
+    }
+}
+
+.testimonials-header {
+    background-color: #F2FBFC;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    font-weight: bolder;
+
+    h1 {
+        color: $dark-mode;
+
+        span {
+            color: $primary-light;
+        }
+    }
+
+    h6 {
+        background-color: #FF910033;
+        text-transform: uppercase;
+        width: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 20px;
+        color: #FF9100;
+        font-size: 15px;
+        margin-bottom: 10px;
+
+    }
 }

@@ -275,4 +275,62 @@ svg:hover path {
   color: #0B0D39;
   border: 2px solid rgb(61, 61, 61);
   background-color: white;
+}
+
+.imageGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imageGroup img {
+  width: 40px;
+  align-items: flex-end !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  bottom: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 50px;
+  left: -47px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+.imageGroup .imageGroup-img1 {
+  z-index: 2;
+}
+.imageGroup .imageGroup-img2 {
+  left: -60px;
+  z-index: 1;
+}
+.imageGroup .imageGroup-img3 {
+  left: -80px;
+  z-index: 0;
+}
+
+.testimonials-header {
+  background-color: #F2FBFC;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+  font-weight: bolder;
+}
+.testimonials-header h1 {
+  color: #0B0D39;
+}
+.testimonials-header h1 span {
+  color: #356DFF;
+}
+.testimonials-header h6 {
+  background-color: rgba(255, 145, 0, 0.2);
+  text-transform: uppercase;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20px;
+  color: #FF9100;
+  font-size: 15px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
