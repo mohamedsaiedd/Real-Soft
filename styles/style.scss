@@ -12,7 +12,7 @@ body,
 html {
     // background-color: rgb(106, 158, 158) !important;
     font-family: 'DM Sans', sans-serif !important;
-    height: 300vh;
+    height: 250vh;
     overflow-x: hidden !important;
 
 }
@@ -89,7 +89,26 @@ li.nav-item {
     margin: 0 auto !important;
     display: flex;
     align-items: center;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        font-weight: 700;
+        // padding-bottom: 10px;
+        position: relative;
+        text-align: center;
 
+        &::before {
+            transform: translateX(-50%);
+            border-radius: 100%;
+            position: absolute;
+            background: $primary-light;
+            bottom: 0px;
+            height: 8px;
+            content: '';
+            width: 8px;
+            left: 50%;
+        }
+
+    }
     i {
         color: #6D6E88;
         font-size: 10px;
@@ -206,6 +225,7 @@ li.nav-item {
         position: relative;
         object-fit: contain;
         width: 100%;
+        pointer-events: none;
 
     }
 }
@@ -612,4 +632,148 @@ h3 {
     left: 50px;
     right: 50px;
 
+}
+
+
+
+
+
+
+//contact us
+
+footer {
+    width: 70% !important;
+    display: flex;
+    justify-content: space-between;
+    // padding: 100px;
+
+    .contact-us {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-evenly;
+
+        h6 {
+            background-color: rgba(255, 145, 0, 0.2);
+            text-transform: uppercase;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #FF9100;
+            font-size: 12px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .faConatctus {
+            transform: rotate(35deg);
+            margin-left: 20px !important;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $primary-light;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+
+        }
+
+        .flexcontactus {
+            display: inline-table;
+            flex-direction: row;
+            width: 90%;
+
+            h1 {
+                margin-right: 10px;
+            }
+        }
+
+        .social-media {
+            display: flex;
+
+        }
+    }
+
+    .contact-us-QuickLinks {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-evenly;
+        color: #0B0D39CC;
+
+
+
+        h6 {
+            opacity: 0.4;
+        }
+
+        .QuickLinks-content {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start;
+            vertical-align: middle !important;
+
+            ul {
+                width: fit-content;
+
+                li {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    opacity: 0.8;
+                    transition: all 0.4s ease-in-out;
+                    width: auto;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1 !important;
+                        font-family: DMSansBold !important;
+                        position: relative;
+                        margin-left: 20px;
+                        &::before {
+                            // transform: translateX(  50%);
+                            border-radius: 100%;
+                            position: absolute;
+                            background: $primary-light;
+                            bottom: 7px;
+                            height: 8px;
+                            content: '';
+                            width: 8px;
+                            left: -30%;
+                            
+                        }
+                    }
+                }
+                list-style: none;
+                padding: 0;
+            }
+
+            .active {
+                    opacity: 1 !important;
+                    font-family: DMSansBold !important;
+                    position: relative;
+                    margin-left: 20px;
+                   
+                    &::before {
+                        transform: translateX(  50%);
+                        border-radius: 100%;
+                        position: absolute;
+                        background: $primary-light;
+                        bottom: 7px;
+                        height: 8px;
+                        content: '';
+                        width: 8px;
+                        left: -30%;
+                    }
+                }
+            }
+        
+    }
 }
