@@ -270,7 +270,7 @@ li.nav-item {
 
         span {
             color: $primary-light;
-        -webkit-text-stroke: 2px $primary-light;
+            -webkit-text-stroke: 2px $primary-light;
 
         }
     }
@@ -421,7 +421,7 @@ svg:hover path {
 }
 
 .testimonials-header {
-    background-color: #F2FBFC;
+    // background-color: #F2FBFC;
     height: 100vh;
     width: 100%;
     margin: 0 auto;
@@ -500,8 +500,16 @@ svg:hover path {
 
 .slick-next,
 .slick-prev {
+    border-radius: 50% !important;
+    transition: all 0.4s ease-in-out;
     margin-top: 50px;
 
+    &:hover {
+        background-color: $dark-mode;
+        color: white;
+        scale: 1.2;
+
+    }
 }
 
 
@@ -522,12 +530,14 @@ svg:hover path {
     margin-right: 20px;
     box-shadow: 0 0 20px #00000010;
     scale: 0.89;
+
     .card-title {
         text-align: left;
         width: 100%;
     }
+
     .card-top {
-        .slick-feedback{
+        .slick-feedback {
             text-align: left;
             margin: 20px 0px !important;
             color: #4b4c5c93
@@ -572,17 +582,34 @@ h3 {
 .prof-detail {
     padding-left: 10px;
     text-align: left;
+
     h4 {
         font-size: 20px;
         left: 0 !important;
         bottom: 0 !important;
         margin: 0 !important;
     }
+
     p {
         font-size: 13px;
         margin: 0 !important;
         color: #4b4c5c93
-
-        
     }
+}
+
+.overlayer {
+    background-color: #F2FBFC;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 80%;
+    display: block;
+    margin: 0 auto !important;
+    text-align: center;
+    border-radius: 40px;
+    margin: auto;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+
 }

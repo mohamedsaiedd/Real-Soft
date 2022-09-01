@@ -326,7 +326,6 @@ svg:hover path {
 }
 
 .testimonials-header {
-  background-color: #F2FBFC;
   height: 100vh;
   width: 100%;
   margin: 0 auto;
@@ -391,7 +390,15 @@ svg:hover path {
 
 .slick-next,
 .slick-prev {
+  border-radius: 50% !important;
+  transition: all 0.4s ease-in-out;
   margin-top: 50px;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: #0B0D39;
+  color: white;
+  scale: 1.2;
 }
 
 .card {
@@ -461,4 +468,20 @@ h3 {
   font-size: 13px;
   margin: 0 !important;
   color: rgba(75, 76, 92, 0.5764705882);
+}
+
+.overlayer {
+  background-color: #F2FBFC;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 80%;
+  display: block;
+  margin: 0 auto !important;
+  text-align: center;
+  border-radius: 40px;
+  margin: auto;
+  position: absolute;
+  left: 50px;
+  right: 50px;
 }/*# sourceMappingURL=style.css.map */
