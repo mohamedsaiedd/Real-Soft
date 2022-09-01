@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
     <title>StartUp</title>
 </head>
@@ -22,8 +24,8 @@
         <div class="dot5"></div>
         <div class="dot3"></div>
     </section>
-    <div class="container">
-        <header class="startup-navbar">
+    <div class="">
+        <header class="startup-navbar container">
             <nav class="navbar navbar-expand-lg  ">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -72,7 +74,7 @@
             </nav>
 
         </header>
-        <section class='heroParent '>
+        <section class='heroParent container'>
             <div class='heroSection'>
                 <h1>
                     The <span>template </span>your startup needed
@@ -94,23 +96,99 @@
 
 
         </section>
-        <section class="testimonials">
-            <header class="testimonials-header"> 
+        <section class="testimonials ">
+            <header class="testimonials-header ">
                 <h6>
                     Testimonials
                 </h6>
-
-                <div class="imageGroup">
-                <h1>
-                    <span>Trusted </span> by 100's<br> of clients
-                </h1>
-                    <img class="imageGroup-img1" src="./assets/images/light/Group 3.png"/>
-                    <img class="imageGroup-img2" src="./assets/images/light/Group 4.png"/>
-                    <img class="imageGroup-img3" src="./assets/images/light/Group 6.png"/>
+                <div class="imageGroup container">
+                    <h1>
+                        <span>Trusted </span> by 100's<br> of clients
+                    </h1>
+                    <img class="imageGroup-img1" src="./assets/images/light/Group 3.png" />
+                    <img class="imageGroup-img2" src="./assets/images/light/Group 4.png" />
+                    <img class="imageGroup-img3" src="./assets/images/light/Group 6.png" />
                 </div>
+                <div  class="autoplay slick-slider">
+                    <div class="card">
+                        <h3 class="card-title">title one</h3>
+                        <div class="card-top">
+                            <p class="slick-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                             </p>
+                            <div class="card-bottom">
+                               
+                                <div class="prof">
+                                    <img src="./assets/images/light/Group 3.png">
+
+                                </div>
+                                <div class="prof-detail">
+                                    <h4>Akhil Sakariya</h4>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <h3 class="card-title">title one</h3>
+                        <div class="card-top">
+                            <p class="slick-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                             </p>
+                            <div class="card-bottom">
+                                <div class="prof">
+                                    <img src="./assets/images/light/Group 6.png">
+
+                                </div>
+                                <div class="prof-detail">
+                                    <h4>Akhil Sakariya</h4>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <h3 class="card-title">title one</h3>
+                        <div class="card-top">
+                            <p class="slick-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                             </p>
+                            <div class="card-bottom">
+                                <div class="prof">
+                                    <img src="./assets/images/light/Group 3.png">
+                                </div>
+                                <div class="prof-detail">
+                                    <h4>Akhil Sakariya</h4>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <h3 class="card-title">title one</h3>
+                        <div class="card-top">
+                            <p class="slick-feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                             </p>
+                            <div class="card-bottom">
+                                <div class="prof">
+                                    <img src="./assets/images/light/Group 4.png">
+
+                                </div>
+                                <div class="prof-detail">
+                                    <h4 >Akhil Sakariya</h4>
+                                    <p> Lorem ipsum dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                  </div>
             </header>
         </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

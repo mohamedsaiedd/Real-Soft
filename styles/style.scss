@@ -2,6 +2,10 @@
 @import "./vars.scss";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap');
 
+@font-face {
+    font-family: DMSansBold;
+    src: url(../assets/fonts/DMSansBold.ttf);
+}
 
 //header
 body,
@@ -258,12 +262,16 @@ li.nav-item {
         font-weight: 900 !important;
         font-size: 60px !important;
         width: 100%;
+        -webkit-text-stroke: 2px $dark-mode;
+
         // letter-spacing: -2.5px;
         // line-height: 68px !important;
         color: $dark-mode;
 
         span {
             color: $primary-light;
+        -webkit-text-stroke: 2px $primary-light;
+
         }
     }
 
@@ -367,6 +375,19 @@ svg:hover path {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 200px;
+    -webkit-text-stroke: 2px $dark-mode;
+
+    h1 {
+        text-align: left;
+        font-weight: 900;
+        font-family: DMSansBold;
+
+        span {
+            -webkit-text-stroke: 2px $primary-light;
+
+        }
+    }
 
     img {
         width: 40px;
@@ -376,20 +397,24 @@ svg:hover path {
         bottom: 0;
         height: fit-content;
         top: 50px;
-        left: -47px;
+        left: -120px;
         border: 4px solid #fff;
-        border-radius:50%
+        border-radius: 50%;
+
     }
+
     .imageGroup-img1 {
-        
+
         z-index: 2;
     }
+
     .imageGroup-img2 {
-        left: -60px;
+        left: -140px;
         z-index: 1;
     }
+
     .imageGroup-img3 {
-        left: -80px;
+        left: -160px;
         z-index: 0;
 
     }
@@ -398,6 +423,8 @@ svg:hover path {
 .testimonials-header {
     background-color: #F2FBFC;
     height: 100vh;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
     justify-content: center;
     padding-top: 50px;
@@ -419,8 +446,143 @@ svg:hover path {
         padding: 10px;
         border-radius: 20px;
         color: #FF9100;
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 10px;
+        letter-spacing: 2px;
+        font-weight: bold;
 
+    }
+}
+
+//slik-slider
+
+.slick-slide {
+    justify-content: center;
+    height: 300px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #F2FBFC;
+
+}
+
+
+
+.slick-prev {
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 40px;
+    // width: 140px;
+    // padding:20px;
+    // transform: translateY(-50%); // this takes care of the vertical centering
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    // user-select: none;
+    z-index: 9;
+}
+
+.slick-next {
+    display: block;
+    position: absolute;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 55%;
+
+}
+
+.slick-next,
+.slick-prev {
+    margin-top: 50px;
+
+}
+
+
+//card style
+
+.card {
+    // width: 200px;
+    padding: 30px 30px;
+    background-color: #fff;
+    // border-radius: 10px;
+    border-top-right-radius: 34px;
+    border-top-left-radius: 34px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 34px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 20px;
+    box-shadow: 0 0 20px #00000010;
+    scale: 0.89;
+    .card-title {
+        text-align: left;
+        width: 100%;
+    }
+    .card-top {
+        .slick-feedback{
+            text-align: left;
+            margin: 20px 0px !important;
+            color: #4b4c5c93
+        }
+    }
+}
+
+.card:hover {
+    box-shadow: 0 0 20px #00000052;
+
+}
+
+.card-top p:nth-child(1),
+h3 {
+    font-family: 'DM Sans', sans-serif;
+    /*font-size:1.5em;*/
+}
+
+.card-hading {
+    // padding-bottom: 20px;
+}
+
+.card-bottom {
+    // padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.prof {
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.prof img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.prof-detail {
+    padding-left: 10px;
+    text-align: left;
+    h4 {
+        font-size: 20px;
+        left: 0 !important;
+        bottom: 0 !important;
+        margin: 0 !important;
+    }
+    p {
+        font-size: 13px;
+        margin: 0 !important;
+        color: #4b4c5c93
+
+        
     }
 }
