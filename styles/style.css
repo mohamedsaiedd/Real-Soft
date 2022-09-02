@@ -543,6 +543,11 @@ footer .contact-us .faConatctus {
   font-size: 30px;
   color: white;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+footer .contact-us .faConatctus:hover {
+  transform: rotate(-35deg);
 }
 footer .contact-us .flexcontactus {
   display: inline-table;
@@ -554,6 +559,28 @@ footer .contact-us .flexcontactus h1 {
 }
 footer .contact-us .social-media {
   display: flex;
+  align-items: center;
+}
+footer .contact-us .social-media p {
+  margin: 0 !important;
+  margin-right: 20px !important;
+}
+footer .contact-us .social-media i {
+  margin: 0 10px;
+  border: 1px solid rgba(68, 68, 68, 0.26);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+footer .contact-us .social-media i:hover {
+  background-color: #0B0D39;
+  color: white;
 }
 footer .contact-us-QuickLinks {
   width: 50%;
@@ -564,7 +591,13 @@ footer .contact-us-QuickLinks {
   color: rgba(11, 13, 57, 0.8);
 }
 footer .contact-us-QuickLinks h6 {
-  opacity: 0.4;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: DMSansBold !important;
+  font-weight: 800;
+  font-size: 13px !important;
+  margin-top: 20px;
 }
 footer .contact-us-QuickLinks .QuickLinks-content {
   justify-content: center;
@@ -621,4 +654,81 @@ footer .contact-us-QuickLinks .QuickLinks-content .active::before {
   content: "";
   width: 8px;
   left: -30%;
+}
+
+.dark-mode {
+  color: white;
+  transition: all 0.4s ease-in-out;
+  background-color: #0B0D39;
+}
+.dark-mode .heroSection h1 {
+  color: white;
+  -webkit-text-stroke: 2px white;
+}
+.dark-mode .overlayer {
+  background-color: #1A1C46;
+}
+.dark-mode .imageGroup h1 {
+  color: white;
+  -webkit-text-stroke: 2px white;
+}
+.dark-mode .prof-detail p {
+  color: rgba(255, 255, 255, 0.507);
+}
+.dark-mode .card {
+  background-color: #2B2D5B;
+}
+.dark-mode .card .slick-feedback {
+  color: rgba(255, 255, 255, 0.507);
+}
+.dark-mode .slick-next, .dark-mode .slick-prev {
+  color: white;
+  background-color: #0B0D39;
+}
+.dark-mode .slick-next:hover, .dark-mode .slick-prev:hover {
+  background-color: #356DFF;
+  border-color: rgba(0, 0, 0, 0);
+}
+.dark-mode .navbar-brand-h3 {
+  color: white;
+}
+.dark-mode .btn-frame {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-color: white;
+}
+.dark-mode .navbar {
+  background-color: #1A1C46;
+}
+.dark-mode .navbar .btn-download-app {
+  color: rgba(238, 238, 238, 0.562);
+}
+.dark-mode .navbar .btn-download-app:hover {
+  color: #0B0D39;
+  background-color: white;
+}
+.dark-mode .nav-link {
+  color: rgba(255, 255, 255, 0.459) !important;
+}
+.dark-mode .nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.dark-mode .active {
+  color: rgb(255, 255, 255) !important;
+}
+.dark-mode .contact-us-QuickLinks h6 {
+  color: rgb(255, 255, 255) !important;
+}
+.dark-mode .contact-us-QuickLinks ul li {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 100 !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 100 !important;
+}
+.dark-mode .social-media {
+  color: rgba(255, 255, 255, 0.459) !important;
+}
+.dark-mode .social-media i:hover {
+  background-color: white !important;
+  color: #0B0D39 !important;
 }/*# sourceMappingURL=style.css.map */
