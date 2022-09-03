@@ -5,7 +5,7 @@ start making responsive landing page with Light & Dark mode
 ## installation 
 After cloning project 
 ```
-//install depandncies
+//install dependencies
 
 npm i 
 
