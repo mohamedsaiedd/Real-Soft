@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800;900&display=swap");
+@font-face {
+  font-family: DMSansBold;
+  src: url(../assets/fonts/DMSansBold.ttf);
+}
+body,
+html {
+  font-family: "DM Sans", sans-serif !important;
+  height: 250vh;
+  overflow-x: hidden !important;
+}
+
 .navbar {
-  -webkit-backdrop-filter: blur(18px);
-          backdrop-filter: blur(18px);
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -107,9 +116,6 @@ li.nav-item .active::before {
   left: 50%;
 }
 
-.freeDots div {
-  z-index: -222 !important;
-}
 .freeDots .dot1 {
   transform: translateX(-50%);
   border-radius: 100%;
@@ -172,7 +178,6 @@ li.nav-item .active::before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 100px;
 }
 .heroParent .heroSection {
   width: 50%;
@@ -591,7 +596,7 @@ footer .contact-us-QuickLinks h6 {
   letter-spacing: 1px;
   font-family: DMSansBold !important;
   font-weight: 800;
-  font-size: 13px;
+  font-size: 13px !important;
   margin-top: 20px;
 }
 footer .contact-us-QuickLinks .QuickLinks-content {
@@ -651,114 +656,6 @@ footer .contact-us-QuickLinks .QuickLinks-content .active::before {
   left: -30%;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar {
-    box-shadow: none !important;
-  }
-  .navbar .navbar-toggler {
-    border: none;
-  }
-  .navbar .navbar-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(53, 109, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
-  .heroParent {
-    margin-top: 150px !important;
-  }
-  .heroParent img {
-    display: none;
-  }
-  .heroParent img::before {
-    display: none !important;
-  }
-  .heroSection {
-    margin-bottom: 160px;
-    width: auto !important;
-  }
-  .heroSection h1 {
-    font-size: 32px !important;
-  }
-  .heroSection p {
-    width: auto !important;
-    color: #4b4c5c;
-    margin: 20px 0 !important;
-  }
-  .btns {
-    flex-direction: column;
-  }
-  .btns .btn {
-    margin-top: 10px;
-  }
-  .overlayer {
-    width: auto;
-    height: 65%;
-  }
-  .imageGroup {
-    margin-left: 70px;
-    margin-bottom: 30px;
-  }
-  .slick-slide {
-    scale: 0.7;
-    margin-left: 15px;
-  }
-  .slick-prev {
-    left: 40%;
-  }
-  .slick-next,
-.slick-prev {
-    margin-top: -20px;
-  }
-  .testimonials-header {
-    height: auto;
-    margin-bottom: 100px;
-  }
-  footer {
-    flex-direction: column;
-  }
-  footer .contact-us {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    height: auto;
-  }
-  footer .contact-us .faConatctus {
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    border-radius: 50%;
-    display: table-cell;
-    background-color: rgba(0, 0, 0, 0);
-    color: #0B0D39;
-  }
-  .contact-us-QuickLinks h6 {
-    font-size: 17px !important;
-  }
-  .QuickLinks-content {
-    font-size: 30px;
-    width: 80%;
-    overflow-wrap: break-word !important;
-  }
-  .QuickLinks-content .first {
-    overflow-wrap: break-word !important;
-  }
-  .QuickLinks-content .second {
-    margin-right: 20px;
-    overflow-wrap: break-word !important;
-  }
-  .QuickLinks-content .second .third {
-    overflow-wrap: break-word !important;
-  }
-}
-@font-face {
-  font-family: DMSansBold;
-  src: url(../assets/fonts/DMSansBold.ttf);
-}
-body,
-html {
-  font-family: "DM Sans", sans-serif !important;
-  overflow-x: hidden !important;
-  box-sizing: border-box;
-}
-
 .dark-mode {
   color: white;
   transition: all 0.4s ease-in-out;
@@ -784,13 +681,11 @@ html {
 .dark-mode .card .slick-feedback {
   color: rgba(255, 255, 255, 0.507);
 }
-.dark-mode .slick-next,
-.dark-mode .slick-prev {
+.dark-mode .slick-next, .dark-mode .slick-prev {
   color: white;
   background-color: #0B0D39;
 }
-.dark-mode .slick-next:hover,
-.dark-mode .slick-prev:hover {
+.dark-mode .slick-next:hover, .dark-mode .slick-prev:hover {
   background-color: #356DFF;
   border-color: rgba(0, 0, 0, 0);
 }
@@ -801,6 +696,9 @@ html {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border-color: white;
+}
+.dark-mode .navbar {
+  background-color: #1A1C46;
 }
 .dark-mode .navbar .btn-download-app {
   color: rgba(238, 238, 238, 0.562);

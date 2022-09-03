@@ -1,0 +1,183 @@
+
+//contact us
+
+footer {
+    width: 70% !important;
+    display: flex;
+    justify-content: space-between;
+    // padding: 100px;
+
+    .contact-us {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-evenly;
+
+        h6 {
+            background-color: rgba(255, 145, 0, 0.2);
+            text-transform: uppercase;
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #FF9100;
+            font-size: 12px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: bold;
+
+        }
+
+        .faConatctus {
+            transform: rotate(35deg);
+            margin-left: 20px !important;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $primary-light;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                transform: rotate(-35deg);
+            }
+
+        }
+
+        .flexcontactus {
+            display: inline-table;
+            flex-direction: row;
+            width: 90%;
+
+            h1 {
+                margin-right: 10px;
+            }
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0 !important;
+                margin-right: 20px !important;
+
+            }
+
+            i {
+                margin: 0 10px;
+                border: 1px solid rgba(68, 68, 68, 0.26);
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                // transform: translate(-50% ,50%);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.4s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $dark-mode;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .contact-us-QuickLinks {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-evenly;
+        color: #0B0D39CC;
+
+
+
+
+        h6 {
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: DMSansBold !important;
+            font-weight: 800;
+            font-size: 13px;
+            margin-top: 20px;
+
+        }
+
+        .QuickLinks-content {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start;
+            vertical-align: middle !important;
+
+            ul {
+                width: fit-content;
+
+                li {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    opacity: 0.8;
+                    transition: all 0.4s ease-in-out;
+                    width: auto;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 1 !important;
+                        font-family: DMSansBold !important;
+                        position: relative;
+                        margin-left: 20px;
+
+                        &::before {
+                            // transform: translateX(  50%);
+                            border-radius: 100%;
+                            position: absolute;
+                            background: $primary-light;
+                            bottom: 7px;
+                            height: 8px;
+                            content: '';
+                            width: 8px;
+                            left: -30%;
+
+                        }
+                    }
+                }
+
+                list-style: none;
+                padding: 0;
+            }
+
+            .active {
+                opacity: 1 !important;
+                font-family: DMSansBold !important;
+                position: relative;
+                margin-left: 20px;
+
+                &::before {
+                    transform: translateX(50%);
+                    border-radius: 100%;
+                    position: absolute;
+                    background: $primary-light;
+                    bottom: 7px;
+                    height: 8px;
+                    content: '';
+                    width: 8px;
+                    left: -30%;
+                }
+            }
+        }
+
+    }
+}
