@@ -585,6 +585,9 @@ footer .contact-us .flexcontactus h1 {
 footer .contact-us .social-media {
   display: flex;
   align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 footer .contact-us .social-media p {
   margin: 0 !important;

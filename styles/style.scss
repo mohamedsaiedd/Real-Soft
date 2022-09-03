@@ -156,3 +156,10 @@ html {
 }
 
 @import "./components/responsive.scss";
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border: none;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: #00000000;
+}
