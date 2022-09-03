@@ -1,5 +1,5 @@
 // responisive 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
     .navbar {
         box-shadow: none !important;
@@ -265,3 +265,30 @@
     }
 }
 
+
+@media only screen and (max-width: 1400px) and (min-width : 600px) {
+  
+footer .contact-us {
+ width: 80%;
+}
+}
+@media only screen and (max-width: 1440px) and  (min-width : 1200px) {
+
+    .imageGroup {
+        margin-left: 137px !important;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .overlayer {
+        height: 50% !important;
+    }
+    footer .contact-us {
+        width: 100% !important;
+    }
+    .imageGroup {
+        img{
+            top:39px
+        }
+            margin-left: 100px !important;
+    }
+}
